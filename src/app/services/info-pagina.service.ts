@@ -22,7 +22,6 @@ export class InfoPaginaService {
         .subscribe( (resp: InfoPagina) => {
           this.cargada = true;
           this.info = resp;
-          console.log(resp.facebook);
         });
   }
 
@@ -31,7 +30,6 @@ export class InfoPaginaService {
         .subscribe( ( resp: any[] ) => {
           this.cargada = true;
           this.equipo = resp;
-          console.log(resp);
         });
   }
 }
